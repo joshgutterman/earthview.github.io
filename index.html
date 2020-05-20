@@ -1,3 +1,13 @@
 <html>
-<meta http-equiv="refresh" content="0; url=https://earthview.withgoogle.com">
+<!---<meta http-equiv="refresh" content="0; url=https://earthview.withgoogle.com">-->
+  
+  <a href="https://earthview.withgoogle.com">Earth</a>
+  
+  $(document).ready(function() {
+     var hash = window.location.hash;
+     if (hash) {
+          $('a[href="'+hash+'"]').click();
+     }
+});
+  
 </html>
